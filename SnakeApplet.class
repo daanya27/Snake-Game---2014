@@ -1,0 +1,97 @@
+// Compiled from SnakeApplet.java (version 1.6 : 50.0, super bit)
+public class SnakeApplet extends java.applet.Applet {
+  
+  // Field descriptor #6 LsnakeCanvas;
+  private snakeCanvas c;
+  
+  // Method descriptor #8 ()V
+  // Stack: 1, Locals: 1
+  public SnakeApplet();
+    0  aload_0 [this]
+    1  invokespecial java.applet.Applet() [10]
+    4  return
+      Line numbers:
+        [pc: 0, line: 6]
+      Local variable table:
+        [pc: 0, pc: 5] local: this index: 0 type: SnakeApplet
+  
+  // Method descriptor #8 ()V
+  // Stack: 5, Locals: 2
+  public void init();
+     0  invokestatic javax.swing.UIManager.getSystemLookAndFeelClassName() : java.lang.String [17]
+     3  invokestatic javax.swing.UIManager.setLookAndFeel(java.lang.String) : void [23]
+     6  goto 10
+     9  astore_1
+    10  aload_0 [this]
+    11  new snakeCanvas [27]
+    14  dup
+    15  invokespecial snakeCanvas() [29]
+    18  putfield SnakeApplet.c : snakeCanvas [30]
+    21  aload_0 [this]
+    22  getfield SnakeApplet.c : snakeCanvas [30]
+    25  new java.awt.Dimension [32]
+    28  dup
+    29  sipush 1000
+    32  sipush 500
+    35  invokespecial java.awt.Dimension(int, int) [34]
+    38  invokevirtual snakeCanvas.setPreferredSize(java.awt.Dimension) : void [37]
+    41  aload_0 [this]
+    42  getfield SnakeApplet.c : snakeCanvas [30]
+    45  iconst_1
+    46  invokevirtual snakeCanvas.setVisible(boolean) : void [41]
+    49  aload_0 [this]
+    50  getfield SnakeApplet.c : snakeCanvas [30]
+    53  iconst_1
+    54  invokevirtual snakeCanvas.setFocusable(boolean) : void [45]
+    57  aload_0 [this]
+    58  aload_0 [this]
+    59  getfield SnakeApplet.c : snakeCanvas [30]
+    62  invokevirtual SnakeApplet.add(java.awt.Component) : java.awt.Component [48]
+    65  pop
+    66  aload_0 [this]
+    67  iconst_1
+    68  invokevirtual SnakeApplet.setVisible(boolean) : void [52]
+    71  aload_0 [this]
+    72  new java.awt.Dimension [32]
+    75  dup
+    76  sipush 1000
+    79  sipush 500
+    82  invokespecial java.awt.Dimension(int, int) [34]
+    85  invokevirtual SnakeApplet.setSize(java.awt.Dimension) : void [53]
+    88  return
+      Exception Table:
+        [pc: 0, pc: 6] -> 9 when : java.lang.Exception
+      Line numbers:
+        [pc: 0, line: 11]
+        [pc: 6, line: 12]
+        [pc: 10, line: 18]
+        [pc: 21, line: 19]
+        [pc: 41, line: 20]
+        [pc: 49, line: 21]
+        [pc: 57, line: 22]
+        [pc: 66, line: 23]
+        [pc: 71, line: 24]
+        [pc: 88, line: 25]
+      Local variable table:
+        [pc: 0, pc: 89] local: this index: 0 type: SnakeApplet
+      Stack map table: number of frames 2
+        [pc: 9, same_locals_1_stack_item, stack: {java.lang.Exception}]
+        [pc: 10, same]
+  
+  // Method descriptor #8 ()V
+  // Stack: 5, Locals: 1
+  public void paint();
+     0  aload_0 [this]
+     1  new java.awt.Dimension [32]
+     4  dup
+     5  sipush 1000
+     8  sipush 500
+    11  invokespecial java.awt.Dimension(int, int) [34]
+    14  invokevirtual SnakeApplet.setSize(java.awt.Dimension) : void [53]
+    17  return
+      Line numbers:
+        [pc: 0, line: 28]
+        [pc: 17, line: 29]
+      Local variable table:
+        [pc: 0, pc: 18] local: this index: 0 type: SnakeApplet
+}
