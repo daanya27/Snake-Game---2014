@@ -33,6 +33,3 @@ public class SnakeApplet extends Applet{
 // THINGS TO GET DONE: 
 //	1. Look at double buffering
 //	2. Customization?
-
-
-
